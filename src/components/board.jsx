@@ -53,7 +53,7 @@ const Board = () => {
                 ) : (
                     <>
                         {
-                            (cnt === 9) ? (<>Game is Draw <button onClick={() => handleReset()}>Play Again</button></>) :
+                            (cnt === 9) ? (<><h1>Game is Draw{" "}</h1><button onClick={() => handleReset()}  style={{background:"white",border:"none", borderRadius:"6%", width:"40%", height:"10%"}}>Play Again</button></>) :
                             (
                                 <>
                                     <div className="myTurn"><h4>Player {isXTurn ? "X" : "O"} please move</h4></div>
